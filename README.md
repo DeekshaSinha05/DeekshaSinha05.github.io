@@ -33,7 +33,7 @@ Employer and community names are typography, not unofficial logos. The Northeast
 
 ## Still useful to add
 
-- Approved headshot, university and internship photos.
+- Approved university and internship photos; the supplied headshot is now included.
 - Real project screenshots, demos, videos, or architecture diagrams.
 - Public repository/demo URLs for Skier Tracking and Bundle Recommendation.
 - Certification credential URLs, validity dates, and permitted official badges.

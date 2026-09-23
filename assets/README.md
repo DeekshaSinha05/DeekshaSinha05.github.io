@@ -27,3 +27,15 @@ Replace a project's `<figure class="architecture ...">` block with:
 ```
 
 For video use `<video controls playsinline preload="metadata" poster="...">` with a `<source>` and captions where applicable. Do not autoplay. Include a text explanation of architecture diagrams; do not convey essential meaning by color alone. Prefer WebP/AVIF and short MP4 clips over large GIFs. Keep filenames lowercase and descriptive.
+
+## Selected photographs
+
+These are optimized WebP copies of user-provided photos. Original photographs are unchanged. Exported assets contain no EXIF/location metadata.
+
+| Portfolio file                                   | User-provided original     | Placement                 |
+| ------------------------------------------------ | -------------------------- | ------------------------- |
+| `portraits/deeksha-sinha.webp`                   | `Adobe Express - file.png` | Home portrait             |
+| `communities/multi-agent-systems-talk.webp`      | `1754256490276.jpeg`       | About: technical exchange |
+| `communities/grace-hopper-celebration-2025.webp` | `IMG_8040.JPG`             | About: community          |
+
+Event images retain their original proportions. No event photo is used as a project screenshot or as evidence of employment. Portrait cropping is controlled by CSS only.
