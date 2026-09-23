@@ -1,123 +1,1025 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Deeksha Sinha — Software Engineer building distributed systems, cloud infrastructure, and production AI systems." />
-  <title>Deeksha Sinha — Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="noise"></div>
-  <header class="nav shell">
-    <a class="brand" href="#top">DS<span>.</span></a>
-    <nav>
-      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#stack">Stack</a>
-      <a href="Deeksha_Sinha_Resume.pdf" target="_blank">Resume</a>
-      <button id="theme" aria-label="Toggle theme">◐</button>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero shell reveal">
-      <div class="eyebrow"><span class="pulse"></span> Boston, MA · Open to Software & AI Engineering</div>
-      <h1>I build systems that<br><span>scale intelligently.</span></h1>
-      <p class="lede">Software Engineer working across <b>distributed systems</b>, <b>cloud infrastructure</b>, and <b>production AI</b>. Currently completing an M.S. in Computer Science at Northeastern University.</p>
-      <div class="actions">
-        <a class="btn primary" href="#work">Explore selected work</a>
-        <a class="btn" href="https://github.com/DeekshaSinha05" target="_blank">GitHub ↗</a>
-        <a class="btn" href="https://www.linkedin.com/in/deekshads/" target="_blank">LinkedIn ↗</a>
-      </div>
-      <div class="metrics">
-        <div><strong>200K+</strong><span>requests/day in distributed backend work</span></div>
-        <div><strong>100K+</strong><span>transactions/day in production services</span></div>
-        <div><strong>4</strong><span>AWS certifications</span></div>
-      </div>
-    </section>
-
-    <section id="work" class="section shell">
-      <div class="section-head reveal"><p>01 / SELECTED WORK</p><h2>Engineering, not decoration.</h2></div>
-
-      <article class="project featured reveal">
-        <div class="project-copy">
-          <p class="kicker">AGENTIC AI · DISTRIBUTED BACKEND</p>
-          <h3>Hirely.AI</h3>
-          <p>A distributed GenAI backend using multi-agent orchestration, embedding pipelines, and asynchronous processing to make AI-assisted screening faster and more systematic.</p>
-          <div class="result"><span>70%</span> reduction in screening time</div>
-          <div class="tags"><span>Agentic AI</span><span>Embeddings</span><span>Async Processing</span><span>Distributed Systems</span></div>
-          <a class="text-link" href="https://github.com/DeekshaSinha05/Hirely.AI" target="_blank">View repository ↗</a>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deeksha Sinha — Software Engineer</title>
+    <meta
+      name="description"
+      content="Deeksha Sinha builds reliable distributed systems, cloud infrastructure, and AI systems. Explore engineering work, experience, and current focus."
+    />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://deekshasinha05.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Deeksha Sinha — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Distributed Systems · Cloud Infrastructure · AI Systems. Engineering work, measurable outcomes, and a focus on reliable production AI."
+    />
+    <meta property="og:url" content="https://deekshasinha05.github.io/" />
+    <meta property="og:site_name" content="Deeksha Sinha" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Deeksha Sinha — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Distributed Systems · Cloud Infrastructure · AI Systems"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="theme.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Deeksha Sinha",
+        "jobTitle": "Software Engineer",
+        "url": "https://deekshasinha05.github.io/",
+        "sameAs": [
+          "https://github.com/DeekshaSinha05",
+          "https://www.linkedin.com/in/deekshads/"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "West Bengal Technical University"
+        },
+        "knowsAbout": [
+          "Distributed systems",
+          "Cloud infrastructure",
+          "AI systems"
+        ]
+      }
+    </script>
+    <noscript
+      ><style>
+        .menu-toggle,
+        .theme-toggle,
+        .project-toolbar {
+          display: none !important;
+        }
+        @media (max-width: 900px) {
+          .sidebar {
+            position: relative;
+            height: auto;
+            display: block;
+            padding: 20px;
+          }
+          #primary-nav {
+            position: static;
+            display: flex;
+            box-shadow: none;
+            border: 0;
+            padding: 15px 0 0;
+          }
+          .sidebar-bottom {
+            display: none;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="sidebar">
+      <a class="identity" href="#home" aria-label="Deeksha Sinha — Home"
+        ><span class="monogram" aria-hidden="true">ds<span>.</span></span
+        ><span>Deeksha Sinha<small>Software Engineer</small></span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="#home" aria-current="page"
+          ><span class="nav-number" aria-hidden="true">01</span>Home<span
+            class="nav-arrow"
+            aria-hidden="true"
+            >↗</span
+          ></a
+        ><a href="#experience"
+          ><span class="nav-number" aria-hidden="true">02</span>Experience<span
+            class="nav-arrow"
+            aria-hidden="true"
+            >↗</span
+          ></a
+        ><a href="#projects"
+          ><span class="nav-number" aria-hidden="true">03</span>Projects<span
+            class="nav-arrow"
+            aria-hidden="true"
+            >↗</span
+          ></a
+        ><a href="#education"
+          ><span class="nav-number" aria-hidden="true">04</span>Education<span
+            class="nav-arrow"
+            aria-hidden="true"
+            >↗</span
+          ></a
+        ><a href="#skills"
+          ><span class="nav-number" aria-hidden="true">05</span>Skills &
+          certifications<span class="nav-arrow" aria-hidden="true">↗</span></a
+        ><a href="#about"
+          ><span class="nav-number" aria-hidden="true">06</span>About<span
+            class="nav-arrow"
+            aria-hidden="true"
+            >↗</span
+          ></a
+        >
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="location">
+          <span class="status-dot" aria-hidden="true"></span> Boston, MA
         </div>
-        <div class="visual terminal">
-          <div class="terminal-bar"><i></i><i></i><i></i><span>agent_orchestrator.py</span></div>
-          <pre><code><em>01</em>  planner.route(context)
-<em>02</em>  ├─ retrieve(candidate_context)
-<em>03</em>  ├─ evaluate(role_requirements)
-<em>04</em>  ├─ rank(signals)
-<em>05</em>  └─ compose(next_action)
-
-<span class="ok">✓ orchestration complete</span>
-<span class="dim">latency optimized · async pipeline</span></code></pre>
-        </div>
-      </article>
-
-      <article class="project reverse reveal">
-        <div class="project-copy">
-          <p class="kicker">AUTONOMOUS AGENTS · RAG</p>
-          <h3>LlamaCompass</h3>
-          <p>An open-source agentic AI system exploring multi-step reasoning with planning, retrieval, memory, tool use, and reflection.</p>
-          <div class="tags"><span>LangGraph</span><span>LlamaIndex</span><span>RAG</span><span>Tool Use</span><span>Memory</span></div>
-          <a class="text-link" href="https://github.com/anigasan/LlamaCompass" target="_blank">View repository ↗</a>
-        </div>
-        <div class="visual architecture" aria-label="Agent architecture diagram">
-          <div class="node n1">PLAN</div><div class="line l1"></div><div class="node n2">RETRIEVE</div>
-          <div class="line l2"></div><div class="node n3">ACT</div><div class="line l3"></div><div class="node n4">REFLECT</div>
-          <div class="orbit">MEMORY</div>
-        </div>
-      </article>
-
-      <div class="project-grid">
-        <article class="mini reveal"><p class="kicker">DISTRIBUTED SYSTEMS</p><h3>Skier Tracking System</h3><p>High-throughput backend using asynchronous messaging, rate limiting, and back-pressure.</p><strong>200K+ requests/day</strong><div class="tags"><span>Spring Boot</span><span>RabbitMQ</span><span>EC2</span><span>DynamoDB</span></div></article>
-        <article class="mini reveal"><p class="kicker">GRAPH ML</p><h3>Bundle Recommendation</h3><p>Graph Transformer using self-supervised learning and causal reasoning.</p><strong>+12.8% Recall@K · +10.5% NDCG@K</strong><div class="tags"><span>Transformers</span><span>ML</span><span>Causal Reasoning</span></div></article>
+        <a href="mailto:sinha.dee@northeastern.edu"
+          >Let’s connect <span aria-hidden="true">↗</span></a
+        ><button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark theme"
+        >
+          <span class="theme-icon" aria-hidden="true">◐</span
+          ><span id="theme-label">Dark mode</span>
+        </button>
       </div>
-    </section>
-
-    <section id="experience" class="section shell">
-      <div class="section-head reveal"><p>02 / EXPERIENCE</p><h2>Production systems across domains.</h2></div>
-      <div class="timeline reveal">
-        <div class="role"><span>2026</span><div><h3>Amazon Web Services</h3><p>Cloud infrastructure · Kubernetes · EKS/ECS · AWS CDK · Amazon Bedrock</p></div></div>
-        <div class="role"><span>2023—24</span><div><h3>J.P. Morgan Chase & Co.</h3><p>Distributed microservices · event-driven ingestion · secure APIs</p></div></div>
-        <div class="role"><span>2022—23</span><div><h3>Ninjacart</h3><p>Kafka platforms · developer infrastructure · observability</p></div></div>
-        <div class="role"><span>2020—22</span><div><h3>Manhattan Associates</h3><p>Distributed forecasting · parallel computation · CI/CD</p></div></div>
-        <div class="role"><span>2017—20</span><div><h3>Capgemini</h3><p>Microservices modernization · Docker · NLP systems</p></div></div>
+    </header>
+    <div class="workspace">
+      <div class="topbar">
+        <span>PERSONAL PORTFOLIO / <span id="page-label">HOME</span></span
+        ><a href="Deeksha_Sinha_Resume.pdf" download
+          >Download résumé <span aria-hidden="true">↓</span></a
+        >
       </div>
-    </section>
-
-    <section id="stack" class="section shell">
-      <div class="section-head reveal"><p>03 / ENGINEERING STACK</p><h2>Tools follow the problem.</h2></div>
-      <div class="stack-grid reveal">
-        <div><h4>Languages</h4><p>Python · Java · Go · C++ · JavaScript · SQL · Bash</p></div>
-        <div><h4>Systems</h4><p>Kafka · RabbitMQ · Microservices · CQRS · Saga · Idempotency</p></div>
-        <div><h4>Cloud</h4><p>AWS · Kubernetes · Docker · Terraform · CDK · EKS · ECS · Lambda</p></div>
-        <div><h4>Data</h4><p>DynamoDB · PostgreSQL · MongoDB · Redis · Elasticsearch</p></div>
-        <div><h4>Observability</h4><p>Grafana · Prometheus · CloudWatch · Distributed Tracing</p></div>
-        <div><h4>AI / ML</h4><p>Amazon Bedrock · LangChain · Transformers · scikit-learn · Agentic Systems</p></div>
-      </div>
-    </section>
-
-    <section class="section shell focus reveal">
-      <p class="kicker">CURRENT FOCUS</p>
-      <h2>What happens when distributed systems meet AI?</h2>
-      <p>I'm interested in the engineering layer between impressive AI demos and dependable production systems: orchestration, evaluation, observability, reliability, latency, and scale.</p>
-    </section>
-  </main>
-
-  <footer class="shell">
-    <div><strong>Deeksha Sinha</strong><p>Software Engineer · Boston, MA</p></div>
-    <div class="footer-links"><a href="mailto:sinha.dee@northeastern.edu">Email</a><a href="https://github.com/DeekshaSinha05" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/deekshads/" target="_blank">LinkedIn</a><a href="Deeksha_Sinha_Resume.pdf" target="_blank">Resume</a></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <main id="main" tabindex="-1">
+        <section id="home" class="page home" aria-labelledby="home-title">
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">
+                <span class="short-line"></span> DISTRIBUTED SYSTEMS × AI
+              </p>
+              <h1 id="home-title">
+                Deeksha<br />Sinha<span class="accent">.</span>
+              </h1>
+              <p class="hero-role">Software Engineer</p>
+              <p class="specialties">
+                Distributed Systems <span>·</span> Cloud Infrastructure
+                <span>·</span> AI Systems
+              </p>
+              <p class="hero-statement">
+                I build reliable systems at the intersection of distributed
+                computing, cloud infrastructure, and AI.
+              </p>
+              <div class="actions">
+                <a class="button primary" href="#projects"
+                  >View work <span aria-hidden="true">↗</span></a
+                ><a class="button" href="Deeksha_Sinha_Resume.pdf" download
+                  >Résumé <span aria-hidden="true">↓</span></a
+                >
+              </div>
+              <div class="social-links">
+                <a
+                  href="https://github.com/DeekshaSinha05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub ↗</a
+                ><a
+                  href="https://www.linkedin.com/in/deekshads/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn ↗</a
+                >
+              </div>
+            </div>
+            <div
+              class="hero-system"
+              aria-label="Engineering focus: distributed systems, cloud infrastructure, and AI systems"
+            >
+              <div class="system-top">
+                <span>ENGINEERING FOCUS</span
+                ><span aria-hidden="true">01—03</span>
+              </div>
+              <div class="system-orbit" aria-hidden="true">
+                <div class="orbit-one"></div>
+                <div class="orbit-two"></div>
+                <div class="orbit-three"></div>
+                <span class="orbit-center">ds.</span><i class="dot dot-one"></i
+                ><i class="dot dot-two"></i><i class="dot dot-three"></i>
+              </div>
+              <div class="system-layers">
+                <div>
+                  <span>01</span><strong>Distributed systems</strong
+                  ><small>Resilience at scale</small>
+                </div>
+                <div>
+                  <span>02</span><strong>Cloud infrastructure</strong
+                  ><small>Built for production</small>
+                </div>
+                <div>
+                  <span>03</span><strong>AI systems</strong
+                  ><small>Intelligence, engineered</small>
+                </div>
+              </div>
+              <div class="system-bottom">RELIABILITY IS A DESIGN DECISION.</div>
+            </div>
+          </div>
+          <div class="credibility">
+            <p class="eyebrow">EXPERIENCE ACROSS</p>
+            <div class="company-strip">
+              <span>Capgemini</span
+              ><span>Manhattan<br /><small>Associates</small></span
+              ><span>ninjacart</span><span>J.P. Morgan</span
+              ><span class="aws-word">AWS</span>
+            </div>
+          </div>
+          <div class="home-background">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">THE BACKGROUND</p>
+                <h2>Experience meets curiosity.</h2>
+              </div>
+              <a class="text-link" href="#about"
+                >About me <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <p class="overview-intro">
+              My career has taken me from backend modernization to distributed
+              platforms, cloud infrastructure, and AI systems. Today, I bring
+              that production experience to graduate study at Northeastern and
+              the challenge of building dependable AI.
+            </p>
+            <div class="background-grid">
+              <a class="background-card career-overview" href="#experience"
+                ><span class="eyebrow">EXPERIENCE</span>
+                <h3>From backend foundations<br />to cloud & AI.</h3>
+                <p>
+                  Capgemini → Manhattan Associates → Ninjacart → J.P. Morgan →
+                  AWS
+                </p>
+                <div class="overview-facts">
+                  <span
+                    ><strong>100K+</strong
+                    ><small>transactions / day at J.P. Morgan</small></span
+                  ><span
+                    ><strong>99.9%</strong><small>service uptime</small></span
+                  >
+                </div>
+                <span class="card-link"
+                  >Explore my career <span aria-hidden="true">↗</span></span
+                ></a
+              ><a class="background-card" href="#education"
+                ><span class="eyebrow">EDUCATION</span>
+                <h3>Northeastern University</h3>
+                <p>
+                  M.S. Computer Science · 2025–2026<br />Expected completion:
+                  Fall 2026
+                </p>
+                <div class="overview-facts">
+                  <span
+                    ><strong>4.0 <em>/ 4.0</em></strong
+                    ><small>GPA</small></span
+                  >
+                </div>
+                <span class="card-link"
+                  >Studies & coursework <span aria-hidden="true">↗</span></span
+                ></a
+              ><a class="background-card" href="#skills"
+                ><span class="eyebrow">ENGINEERING TOOLKIT</span>
+                <h3>Across the systems stack.</h3>
+                <p>
+                  Backend & distributed systems, cloud infrastructure, data &
+                  observability, and AI.
+                </p>
+                <div class="overview-facts">
+                  <span
+                    ><strong>4 AWS <em>+ 1 Oracle</em></strong
+                    ><small>certifications</small></span
+                  >
+                </div>
+                <span class="card-link"
+                  >Skills & certifications
+                  <span aria-hidden="true">↗</span></span
+                ></a
+              ><a class="background-card focus-overview" href="#about"
+                ><span class="eyebrow">CURRENT FOCUS</span>
+                <h3>Distributed Systems × AI</h3>
+                <p>
+                  The engineering behind reliable AI: orchestration, evaluation,
+                  observability, and scale.
+                </p>
+                <p class="community-preview">
+                  Community: AnitaB.org / GHC, RTC, and Women Who Code.
+                </p>
+                <span class="card-link"
+                  >Interests & community <span aria-hidden="true">↗</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="home-work">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Systems. With impact.</h2>
+              </div>
+              <a class="text-link" href="#projects"
+                >All projects <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="teaser-grid">
+              <a class="teaser" href="#projects/hirely"
+                ><span class="eyebrow">01 / AI & AGENTS</span>
+                <h3>Hirely.AI <span aria-hidden="true">↗</span></h3>
+                <p>Multi-agent recruiting infrastructure.</p>
+                <strong>≈70% <small>less screening time</small></strong></a
+              ><a class="teaser" href="#projects/skier"
+                ><span class="eyebrow">02 / DISTRIBUTED SYSTEMS</span>
+                <h3>Skier Tracking <span aria-hidden="true">↗</span></h3>
+                <p>Asynchronous, high-throughput backend.</p>
+                <strong>200K+ <small>requests / day</small></strong></a
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          id="experience"
+          class="page"
+          aria-labelledby="experience-title"
+        >
+          <div class="page-heading">
+            <p class="eyebrow">01 / EXPERIENCE</p>
+            <h1 id="experience-title">
+              A career in<br /><span class="subtle">building systems.</span>
+            </h1>
+            <p>
+              From backend modernization to distributed platforms, cloud
+              infrastructure, and AI-assisted operations.
+            </p>
+          </div>
+          <div class="career-path" aria-label="Career progression">
+            <span>Backend engineering</span><b aria-hidden="true">→</b
+            ><span>Distributed systems</span><b aria-hidden="true">→</b
+            ><span>Cloud infrastructure</span><b aria-hidden="true">→</b
+            ><span>AI systems</span>
+          </div>
+          <div class="timeline">
+            <article class="career-entry featured-role">
+              <div class="timeline-year">
+                2026<span class="timeline-dot"></span>
+              </div>
+              <details open>
+                <summary>
+                  <span class="role-top"
+                    ><span class="eyebrow">Cloud infrastructure</span
+                    ><span class="latest">MOST RECENT</span></span
+                  ><span class="company-name">Amazon Web Services</span
+                  ><span class="job-title">Summer Intern</span
+                  ><span class="dates">May – Aug 2026</span
+                  ><span class="role-focus"
+                    >Cloud infrastructure & AI-assisted operations</span
+                  ><span class="expand-icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="role-content">
+                  <ul class="accomplishments">
+                    <li>
+                      Worked on cloud infrastructure and deployment reliability
+                      using Kubernetes and infrastructure as code.
+                    </li>
+                    <li>
+                      Explored AI-assisted operational workflows with Amazon
+                      Bedrock.
+                    </li>
+                  </ul>
+                  <ul class="tags">
+                    <li>AWS</li>
+                    <li>Kubernetes</li>
+                    <li>AWS CDK</li>
+                    <li>Amazon Bedrock</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+            <article class="career-entry">
+              <div class="timeline-year">
+                2023–24<span class="timeline-dot"></span>
+              </div>
+              <details>
+                <summary>
+                  <span class="role-top"
+                    ><span class="eyebrow">Distributed systems</span></span
+                  ><span class="company-name">J.P. Morgan</span
+                  ><span class="job-title">Software Development Engineer</span
+                  ><span class="dates">Sep 2023 – Jul 2024</span
+                  ><span class="role-focus"
+                    >Resilient services at transaction scale</span
+                  ><span class="expand-icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="role-content">
+                  <ul class="accomplishments">
+                    <li>
+                      Built distributed microservices processing 100K+
+                      transactions/day at 99.9% uptime, with circuit breakers,
+                      backoff retries, and idempotency.
+                    </li>
+                    <li>
+                      Reduced operational costs by 90% with event-driven
+                      ingestion using Lambda, Glue, and S3.
+                    </li>
+                    <li>
+                      Developed OAuth 2.0 APIs with rate limiting and
+                      idempotency, integrating with 20+ internal services.
+                    </li>
+                  </ul>
+                  <ul class="tags">
+                    <li>Spring Boot</li>
+                    <li>AWS</li>
+                    <li>Event-driven systems</li>
+                    <li>OAuth 2.0</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+            <article class="career-entry">
+              <div class="timeline-year">
+                2022–23<span class="timeline-dot"></span>
+              </div>
+              <details>
+                <summary>
+                  <span class="role-top"
+                    ><span class="eyebrow">Platform engineering</span></span
+                  ><span class="company-name">Ninjacart</span
+                  ><span class="job-title">Software Development Engineer</span
+                  ><span class="dates">Jul 2022 – Sep 2023</span
+                  ><span class="role-focus"
+                    >Messaging platforms & developer infrastructure</span
+                  ><span class="expand-icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="role-content">
+                  <ul class="accomplishments">
+                    <li>
+                      Architected a Kafka-based buy-now-pay-later platform,
+                      reducing external payment dependency by 60%.
+                    </li>
+                    <li>
+                      Built a schema-driven API generation platform that reduced
+                      API development time by 80%.
+                    </li>
+                    <li>
+                      Reduced mean time to recovery by 50% through
+                      observability, distributed tracing, and SLO-based
+                      alerting.
+                    </li>
+                  </ul>
+                  <ul class="tags">
+                    <li>Kafka</li>
+                    <li>MongoDB</li>
+                    <li>Grafana</li>
+                    <li>Prometheus</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+            <article class="career-entry">
+              <div class="timeline-year">
+                2020–22<span class="timeline-dot"></span>
+              </div>
+              <details>
+                <summary>
+                  <span class="role-top"
+                    ><span class="eyebrow">Distributed computing</span></span
+                  ><span class="company-name">Manhattan Associates</span
+                  ><span class="job-title"
+                    >Software Development Engineer, R&D</span
+                  ><span class="dates">Jan 2020 – Jul 2022</span
+                  ><span class="role-focus"
+                    >Distributed computation & delivery automation</span
+                  ><span class="expand-icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="role-content">
+                  <ul class="accomplishments">
+                    <li>
+                      Built a distributed forecasting engine using parallel
+                      computation across partitioned datasets.
+                    </li>
+                    <li>
+                      Automated CI/CD with blue/green deployments and rollback
+                      automation.
+                    </li>
+                  </ul>
+                  <ul class="tags">
+                    <li>Parallel computation</li>
+                    <li>CI/CD</li>
+                    <li>Blue/green deployments</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+            <article class="career-entry">
+              <div class="timeline-year">
+                2017–20<span class="timeline-dot"></span>
+              </div>
+              <details>
+                <summary>
+                  <span class="role-top"
+                    ><span class="eyebrow">Backend engineering</span></span
+                  ><span class="company-name">Capgemini</span
+                  ><span class="job-title">Software Development Engineer</span
+                  ><span class="dates">Oct 2017 – Jan 2020</span
+                  ><span class="role-focus">Modernizing backend systems</span
+                  ><span class="expand-icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="role-content">
+                  <ul class="accomplishments">
+                    <li>
+                      Led a monolith-to-microservices migration with Spring
+                      Boot, Docker, and the Strangler Fig pattern, reducing
+                      release cycles by 60%.
+                    </li>
+                    <li>
+                      Built an NLP classification engine processing 10K+
+                      messages/day.
+                    </li>
+                  </ul>
+                  <ul class="tags">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Docker</li>
+                    <li>NLP</li>
+                  </ul>
+                </div>
+              </details>
+            </article>
+          </div>
+          <p class="section-note">
+            Selected engineering contributions. Full career details in the
+            <a href="Deeksha_Sinha_Resume.pdf" download>résumé</a>.
+          </p>
+        </section>
+        <section id="projects" class="page" aria-labelledby="projects-title">
+          <div class="page-heading">
+            <p class="eyebrow">02 / SELECTED PROJECTS</p>
+            <h1 id="projects-title">
+              Ideas, engineered<br /><span class="subtle">into systems.</span>
+            </h1>
+            <p>
+              Agent orchestration, distributed backends, and machine learning. A
+              selection of work across the stack.
+            </p>
+          </div>
+          <div class="project-toolbar">
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button type="button" data-filter="all" aria-pressed="true">
+                All <span>04</span></button
+              ><button type="button" data-filter="ai" aria-pressed="false">
+                AI / Agents</button
+              ><button
+                type="button"
+                data-filter="distributed"
+                aria-pressed="false"
+              >
+                Distributed systems</button
+              ><button type="button" data-filter="ml" aria-pressed="false">
+                ML
+              </button>
+            </div>
+            <span class="project-count" aria-live="polite">4 projects</span>
+          </div>
+          <div class="project-grid">
+            <article
+              id="project-hirely"
+              class="project-card"
+              data-category="ai distributed"
+              tabindex="-1"
+            >
+              <figure class="architecture agents">
+                <div class="diagram-label">
+                  <span>System sketch</span><span aria-hidden="true">01</span>
+                </div>
+                <div class="diagram-nodes">
+                  <span>Candidate context</span><span>Orchestration</span
+                  ><span>Retrieve</span><span>Evaluate</span
+                  ><span>Screening signals</span>
+                </div>
+                <figcaption>
+                  Asynchronous recruiting pipeline · Conceptual architecture
+                </figcaption>
+              </figure>
+              <div class="project-copy">
+                <p class="eyebrow">AI / AGENTS · DISTRIBUTED SYSTEMS</p>
+                <h2>Hirely.AI</h2>
+                <h3>A distributed multi-agent recruiting platform.</h3>
+                <p>
+                  Orchestrates agents, embedding pipelines, and asynchronous
+                  processing to make candidate screening faster and more
+                  systematic.
+                </p>
+                <div class="project-result">
+                  <strong>≈70%</strong><span>reduction in screening time</span>
+                </div>
+                <ul class="tags">
+                  <li>Agent orchestration</li>
+                  <li>Embeddings</li>
+                  <li>Async processing</li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="https://github.com/DeekshaSinha05/Hirely.AI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Explore repository <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article
+              id="project-llama"
+              class="project-card"
+              data-category="ai"
+              tabindex="-1"
+            >
+              <figure class="architecture reasoning">
+                <div class="diagram-label">
+                  <span>System sketch</span><span aria-hidden="true">02</span>
+                </div>
+                <div class="diagram-nodes">
+                  <span>Planning</span><span>Retrieval</span
+                  ><span>Tool use</span><span>Reflection</span
+                  ><span>Memory</span>
+                </div>
+                <figcaption>
+                  Agent reasoning loop · Conceptual architecture
+                </figcaption>
+              </figure>
+              <div class="project-copy">
+                <p class="eyebrow">AI / AGENTS</p>
+                <h2>LlamaCompass</h2>
+                <h3>From a question to a considered next action.</h3>
+                <p>
+                  An open-source agentic AI system exploring multi-step
+                  reasoning through planning, retrieval, tool use, memory, and
+                  reflection.
+                </p>
+                <div class="project-result">
+                  <strong>Plan → Act</strong
+                  ><span>retrieve, remember, reflect</span>
+                </div>
+                <ul class="tags">
+                  <li>LangGraph</li>
+                  <li>LlamaIndex</li>
+                  <li>RAG</li>
+                  <li>Memory</li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="https://github.com/anigasan/LlamaCompass"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Explore repository <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article
+              id="project-skier"
+              class="project-card"
+              data-category="distributed"
+              tabindex="-1"
+            >
+              <figure class="architecture distributed">
+                <div class="diagram-label">
+                  <span>System sketch</span><span aria-hidden="true">03</span>
+                </div>
+                <div class="diagram-nodes">
+                  <span>Requests</span><span>Spring Boot / EC2</span
+                  ><span>RabbitMQ</span><span>Workers</span
+                  ><span>DynamoDB</span>
+                </div>
+                <figcaption>
+                  Queue-based processing · Conceptual architecture
+                </figcaption>
+              </figure>
+              <div class="project-copy">
+                <p class="eyebrow">DISTRIBUTED SYSTEMS</p>
+                <h2>Skier Tracking System</h2>
+                <h3>High throughput. Decoupled processing.</h3>
+                <p>
+                  A distributed backend with asynchronous messaging, rate
+                  limiting, and back-pressure to keep ingestion and processing
+                  loosely coupled.
+                </p>
+                <div class="project-result">
+                  <strong>200K+</strong><span>requests per day</span>
+                </div>
+                <ul class="tags">
+                  <li>Spring Boot</li>
+                  <li>EC2</li>
+                  <li>RabbitMQ</li>
+                  <li>DynamoDB</li>
+                </ul>
+                <span class="project-type">Engineering project</span>
+              </div>
+            </article>
+            <article
+              id="project-bundle"
+              class="project-card"
+              data-category="ml"
+              tabindex="-1"
+            >
+              <figure class="architecture graph">
+                <div class="diagram-label">
+                  <span>System sketch</span><span aria-hidden="true">04</span>
+                </div>
+                <div class="diagram-nodes">
+                  <span>Interaction graph</span><span>Graph Transformer</span
+                  ><span>Representations</span><span>Bundle ranking</span
+                  ><span>Recommendations</span>
+                </div>
+                <figcaption>
+                  Graph-based recommendation · Conceptual architecture
+                </figcaption>
+              </figure>
+              <div class="project-copy">
+                <p class="eyebrow">MACHINE LEARNING</p>
+                <h2>Bundle Recommendation</h2>
+                <h3>Learning the relationships behind recommendations.</h3>
+                <p>
+                  Graph Transformer recommendation work combining
+                  self-supervised learning and causal reasoning.
+                </p>
+                <div class="project-result">
+                  <strong>+12.8%</strong><span>Recall@K · +10.5% NDCG@K</span>
+                </div>
+                <ul class="tags">
+                  <li>Graph Transformers</li>
+                  <li>Self-supervised learning</li>
+                  <li>Causal reasoning</li>
+                </ul>
+                <span class="project-type">Engineering project</span>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="education" class="page" aria-labelledby="education-title">
+          <div class="page-heading">
+            <p class="eyebrow">03 / EDUCATION</p>
+            <h1 id="education-title">
+              A foundation.<br /><span class="subtle"
+                >An ongoing curiosity.</span
+              >
+            </h1>
+            <p>
+              Connecting rigorous computer science with the practical work of
+              building production systems.
+            </p>
+          </div>
+          <article class="education-card">
+            <div class="education-mark" aria-hidden="true">
+              N<span>NORTHEASTERN</span>
+            </div>
+            <div>
+              <p class="eyebrow">BOSTON, MA · 2025–2026</p>
+              <h2>Northeastern University</h2>
+              <h3>M.S. Computer Science</h3>
+              <p>January 2025 – Fall 2026 (expected)</p>
+              <div class="gpa">
+                <strong>4.0 <span>/ 4.0</span></strong
+                ><span>GPA</span>
+              </div>
+              <p class="eyebrow">COURSEWORK</p>
+              <ul class="tags">
+                <li>Object-Oriented Programming</li>
+                <li>Distributed Systems</li>
+                <li>Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Practical AI</li>
+                <li>Database Management Systems (DBMS)</li>
+                <li>Machine Learning Lab</li>
+              </ul>
+            </div>
+          </article>
+          <article class="education-secondary">
+            <p class="eyebrow">KOLKATA, INDIA · 2013–2017</p>
+            <h2>West Bengal Technical University</h2>
+            <p>B.Tech in Computer Science and Engineering</p>
+          </article>
+        </section>
+        <section id="skills" class="page" aria-labelledby="skills-title">
+          <div class="page-heading">
+            <p class="eyebrow">04 / SKILLS & CERTIFICATIONS</p>
+            <h1 id="skills-title">
+              Tools follow<br /><span class="subtle">the problem.</span>
+            </h1>
+            <p>
+              An engineering toolkit spanning backend systems, cloud platforms,
+              data, and production AI.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-domain">
+              <span class="domain-index">01</span>
+              <h2>Languages</h2>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Go</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Bash</li>
+              </ul>
+            </article>
+            <article class="skill-domain">
+              <span class="domain-index">02</span>
+              <h2>Backend / Distributed Systems</h2>
+              <ul class="tags">
+                <li>Spring Boot</li>
+                <li>Microservices</li>
+                <li>Kafka</li>
+                <li>RabbitMQ</li>
+                <li>REST</li>
+                <li>Event-driven architecture</li>
+                <li>CQRS</li>
+                <li>Saga</li>
+                <li>Idempotency</li>
+              </ul>
+            </article>
+            <article class="skill-domain">
+              <span class="domain-index">03</span>
+              <h2>Cloud / Infrastructure</h2>
+              <ul class="tags">
+                <li>AWS</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>Terraform</li>
+                <li>AWS CDK</li>
+                <li>CloudFormation</li>
+                <li>CI/CD</li>
+                <li>EKS</li>
+                <li>ECS</li>
+                <li>Lambda</li>
+              </ul>
+            </article>
+            <article class="skill-domain">
+              <span class="domain-index">04</span>
+              <h2>Data / Observability</h2>
+              <ul class="tags">
+                <li>DynamoDB</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Redis</li>
+                <li>Elasticsearch</li>
+                <li>Grafana</li>
+                <li>Prometheus</li>
+                <li>CloudWatch</li>
+                <li>Distributed tracing</li>
+              </ul>
+            </article>
+            <article class="skill-domain">
+              <span class="domain-index">05</span>
+              <h2>AI / ML</h2>
+              <ul class="tags">
+                <li>Amazon Bedrock</li>
+                <li>LangChain</li>
+                <li>Transformers</li>
+                <li>scikit-learn</li>
+                <li>Generative AI</li>
+                <li>Claude</li>
+                <li>Agentic Systems</li>
+              </ul>
+            </article>
+          </div>
+          <div class="section-heading certification-heading">
+            <div>
+              <p class="eyebrow">CONTINUED LEARNING</p>
+              <h2>Certifications</h2>
+            </div>
+            <span class="eyebrow">AWS · ORACLE</span>
+          </div>
+          <div class="certifications">
+            <article class="certification">
+              <span class="cert-brand">AWS</span>
+              <div>
+                <h3>AWS Certified Solutions Architect – Professional</h3>
+                <span>SAP-C02</span>
+              </div>
+              <span class="cert-line" aria-hidden="true"></span>
+            </article>
+            <article class="certification">
+              <span class="cert-brand">AWS</span>
+              <div>
+                <h3>AWS Certified Solutions Architect – Associate</h3>
+                <span>SAA-C03</span>
+              </div>
+              <span class="cert-line" aria-hidden="true"></span>
+            </article>
+            <article class="certification">
+              <span class="cert-brand">AWS</span>
+              <div>
+                <h3>AWS Certified AI Practitioner</h3>
+                <span>AIF-C01</span>
+              </div>
+              <span class="cert-line" aria-hidden="true"></span>
+            </article>
+            <article class="certification">
+              <span class="cert-brand">AWS</span>
+              <div>
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <span>CLF-C02</span>
+              </div>
+              <span class="cert-line" aria-hidden="true"></span>
+            </article>
+            <article class="certification">
+              <span class="cert-brand">ORACLE</span>
+              <div>
+                <h3>ORACLE Certified Java Professional</h3>
+                <span>Java</span>
+              </div>
+              <span class="cert-line" aria-hidden="true"></span>
+            </article>
+          </div>
+        </section>
+        <section id="about" class="page" aria-labelledby="about-title">
+          <div class="page-heading">
+            <p class="eyebrow">05 / ABOUT & CURRENT FOCUS</p>
+            <h1 id="about-title">
+              Distributed systems.<br /><span class="subtle"
+                >A new intelligence.</span
+              >
+            </h1>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="large-copy">
+                The interesting part of AI is what it takes to make it
+                dependable.
+              </p>
+              <p>
+                I’m Deeksha, a software engineer based in Boston. My work has
+                grown from backend engineering and distributed platforms to
+                cloud infrastructure and AI systems.
+              </p>
+              <p>
+                I’m particularly interested in the engineering layer that turns
+                AI demonstrations into reliable production systems: how agents
+                coordinate, how we evaluate their behavior, and how we keep the
+                whole system observable and resilient.
+              </p>
+              <p>
+                I’m completing an M.S. in Computer Science at Northeastern
+                University, bringing production engineering experience to the
+                questions I explore next.
+              </p>
+              <a class="button primary" href="mailto:sinha.dee@northeastern.edu"
+                >Let’s connect <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <aside class="focus-card">
+              <p class="eyebrow">CURRENT TECHNICAL INTERESTS</p>
+              <h2>Distributed<br />Systems <span>×</span> AI</h2>
+              <ul>
+                <li>Agent orchestration</li>
+                <li>AI infrastructure</li>
+                <li>Reliability & evaluation</li>
+                <li>Observability</li>
+                <li>Distributed inference</li>
+                <li>Scalable AI systems</li>
+              </ul>
+            </aside>
+          </div>
+          <div class="section-heading communities-heading">
+            <div>
+              <p class="eyebrow">BEYOND THE CODE</p>
+              <h2>Community & connection.</h2>
+            </div>
+          </div>
+          <div class="communities">
+            <article>
+              <p class="eyebrow">MEMBER · GHC 2025</p>
+              <h3>AnitaB.org</h3>
+              <p>Grace Hopper Celebration</p>
+            </article>
+            <article>
+              <p class="eyebrow">MEMBER</p>
+              <h3>Rewriting the Code</h3>
+              <p>RTC community</p>
+            </article>
+            <article>
+              <p class="eyebrow">MENTOR</p>
+              <h3>Women Who Code</h3>
+              <p>Engineering mentorship</p>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span
+          >Deeksha Sinha <span class="footer-dot">/</span> Software
+          Engineer</span
+        ><a href="mailto:sinha.dee@northeastern.edu"
+          >sinha.dee@northeastern.edu <span aria-hidden="true">↗</span></a
+        ><a href="#home">Back to home ↑</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
