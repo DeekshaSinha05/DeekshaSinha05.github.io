@@ -21,7 +21,7 @@ Open http://localhost:8765. Hash routes expose Home, Experience, Projects, Educa
 - `Deeksha_Sinha_Resume.pdf`: original résumé, preserved without modification.
 - `assets/`: organized directories and instructions for approved future media.
 
-Edit the HTML directly; there is no generated-source dependency. Match a project's `data-category` tokens to `data-filter` values (`ai`, `distributed`, `ml`). Use the native `details`/`summary` structure for experience entries. Keep outcome figures tied to the supplied résumé or another confirmed source.
+Edit the HTML directly; there is no generated-source dependency. Match a project's `data-category` tokens to `data-filter` values (`ai`, `distributed`, `cloud`, `ml`). Use the native `details`/`summary` structure for experience entries. Keep outcome figures tied to the supplied résumé or another confirmed source.
 
 ## Content decisions
 
@@ -49,3 +49,5 @@ Push the finished commit to `main` in `DeekshaSinha05/DeekshaSinha05.github.io`.
 ## Manual verification
 
 Test 320, 390, 768, 1024, and 1440 pixel widths; both themes; all six routes; filters; keyboard menu/escape; disclosure controls; direct project links; back/forward; résumé download; reduced motion; and readable no-JavaScript content. External links open a new tab with `noopener noreferrer`.
+
+DeployGuard is included as an AWS internship project with a conceptual validation flow. Its card intentionally omits internal architecture, security findings, and performance figures.
