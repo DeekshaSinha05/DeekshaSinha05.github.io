@@ -84,7 +84,7 @@
   );
 
   function route(moveFocus = true) {
-    const [raw = "home", project] = location.hash.slice(1).split("/");
+    const [raw = "home", project, detail] = location.hash.slice(1).split("/");
     if (raw === "main") return; // Preserve the native skip link.
     const requested = aliases[raw] || raw || "home";
     const id = Object.hasOwn(pageNames, requested) ? requested : "home";
@@ -107,12 +107,24 @@
       id === "projects" && project
         ? document.getElementById(`project-${project}`)
         : null;
+    const sectionTarget =
+      id === "skills" && project === "certifications"
+        ? document.getElementById("certifications")
+        : null;
+    if (target && detail === "details") {
+      target.querySelector("details").open = true;
+    }
     if (moveFocus) {
-      const focus = target || document.querySelector(`#${id} h1`);
+      const focus =
+        sectionTarget || target || document.querySelector(`#${id} h1`);
       focus.setAttribute("tabindex", "-1");
       focus.focus({ preventScroll: true });
     }
-    if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+    if (sectionTarget || target)
+      (sectionTarget || target).scrollIntoView({
+        behavior: "instant",
+        block: "start",
+      });
     else if (moveFocus) window.scrollTo({ top: 0, behavior: "instant" });
   }
   window.addEventListener("hashchange", () => route());

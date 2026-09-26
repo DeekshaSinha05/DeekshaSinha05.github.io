@@ -1913,3 +1913,476 @@ footer a {
   justify-content: flex-start;
   gap: 48px;
 }
+/* Evidence-led portfolio refinements. */
+.hero-tenure {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text);
+}
+.university-highlight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 25px 28px;
+  margin: 0 0 30px;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-left: 4px solid #b43b43;
+  background: var(--surface);
+  border-radius: 4px;
+}
+.university-highlight:hover {
+  border-color: var(--accent);
+}
+.university-initial {
+  width: 58px;
+  height: 66px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #8e272d;
+  color: white;
+  font:
+    46px Georgia,
+    serif;
+  border-radius: 3px;
+}
+.university-copy,
+.graduation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.university-copy strong {
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+}
+.university-copy > span:last-child {
+  font-size: 13px;
+  color: var(--muted);
+}
+.graduation {
+  margin-left: auto;
+  padding-left: 22px;
+  border-left: 1px solid var(--line);
+  min-width: 180px;
+}
+.graduation strong {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.graduation > span:last-child {
+  font-size: 11px;
+  color: var(--accent);
+}
+.home-certifications {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 45px;
+  border-top: 1px solid var(--line);
+  padding-top: 32px;
+}
+.home-certifications h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.home-badges {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.home-badges a {
+  display: flex;
+  border-radius: 4px;
+}
+.home-badges img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+.home-badges a:hover {
+  background: var(--active);
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+.project-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.project-copy > p:not(.eyebrow) {
+  min-height: 0;
+}
+.project-copy > .text-link {
+  align-self: flex-start;
+  margin-top: 18px;
+}
+.project-type {
+  margin-top: 18px;
+}
+.project-brief {
+  margin: 24px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+.project-brief summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  min-height: 48px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.project-brief summary > span {
+  font-size: 19px;
+  color: var(--accent);
+}
+.project-brief[open] summary > span {
+  transform: rotate(45deg);
+}
+.brief-content {
+  padding: 0 0 20px;
+}
+.brief-content h4 {
+  font-size: 12px;
+  margin: 18px 0 7px;
+}
+.brief-content p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.brief-content .brief-source {
+  font-size: 11px;
+  margin-top: 18px;
+}
+.project-stack {
+  margin-top: auto;
+  padding-top: 25px;
+}
+.project-stack > h3 {
+  font:
+    10px/1.6 ui-monospace,
+    monospace;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.project-copy .project-stack .tags {
+  min-height: 0;
+  margin: 0 0 13px;
+}
+.project-stack > p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+}
+.project-stack > p > strong {
+  display: block;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.related-work {
+  margin-top: 15px;
+}
+.skill-evidence {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.course-groups {
+  display: grid;
+  gap: 24px;
+}
+.course-groups h4 {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+.course-groups .tags {
+  margin-top: 0;
+}
+.course-groups .text-link {
+  font-size: 11px;
+  margin-top: 13px;
+}
+.certification-heading {
+  flex-wrap: wrap;
+}
+.certification-heading > .eyebrow {
+  display: none;
+}
+.certifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: 0;
+}
+.credential-card {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.credential-art {
+  height: 145px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.credential-art img {
+  width: 145px;
+  height: 145px;
+  object-fit: contain;
+}
+.oracle-credential .credential-art {
+  background: #fff;
+  border-radius: 4px;
+}
+.oracle-credential .credential-art img {
+  width: 160px;
+  height: auto;
+  max-width: 80%;
+}
+.credential-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+.credential-copy .eyebrow {
+  font-size: 10px;
+}
+.credential-copy h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.credential-dates {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+.credential-copy .text-link {
+  margin-top: auto;
+  align-self: flex-start;
+  min-height: 40px;
+}
+.credential-card:first-child {
+  border-top: 3px solid var(--accent);
+}
+/* Improve small-label readability without competing with content headings. */
+.eyebrow {
+  font-size: 11px;
+}
+.tags li {
+  font-size: 11px;
+}
+.diagram-label,
+.architecture figcaption {
+  font-size: 10px;
+}
+.architecture {
+  height: 294px;
+}
+.diagram-nodes span {
+  font-size: 11px;
+}
+.project-copy > .eyebrow,
+.role-top .eyebrow,
+.teaser > .eyebrow,
+.background-card > .eyebrow {
+  font-size: 10px;
+}
+.topbar {
+  font-size: 11px;
+}
+.project-count {
+  font-size: 11px;
+}
+.filters button {
+  font-size: 12px;
+}
+.system-top {
+  font-size: 10px;
+}
+.system-bottom {
+  font-size: 9px;
+}
+.nav-number {
+  font-size: 11px;
+}
+footer {
+  font-size: 12px;
+}
+.footer-links a {
+  min-height: 44px;
+}
+.project-toolbar {
+  align-items: flex-start;
+}
+.project-count {
+  padding-top: 14px;
+}
+.architecture figcaption {
+  line-height: 1.6;
+}
+.section-note {
+  line-height: 1.8;
+}
+@media (max-width: 1150px) {
+  .home-certifications {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .graduation {
+    min-width: 155px;
+  }
+  .university-copy strong {
+    font-size: 21px;
+  }
+  .university-highlight {
+    gap: 18px;
+    padding: 23px;
+  }
+  .credential-card {
+    padding: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .university-highlight {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .university-initial {
+    width: 46px;
+    height: 58px;
+    font-size: 37px;
+  }
+  .university-copy strong {
+    font-size: 22px;
+  }
+  .university-copy > span:last-child {
+    font-size: 12px;
+  }
+  .graduation {
+    grid-column: 1/-1;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: 16px 0 0;
+    margin: 0;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+    align-items: center;
+  }
+  .graduation > .eyebrow {
+    grid-column: 1/-1;
+  }
+  .graduation strong {
+    font-size: 22px;
+  }
+  .home-badges {
+    gap: 4px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .home-badges img {
+    width: clamp(46px, 13vw, 68px);
+    height: clamp(46px, 13vw, 68px);
+  }
+  .certifications {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .credential-card {
+    padding: 25px;
+  }
+  .credential-art {
+    height: 140px;
+    margin-bottom: 18px;
+  }
+  .credential-art img {
+    width: 140px;
+    height: 140px;
+  }
+  .credential-copy h3 {
+    font-size: 23px;
+  }
+  .hero-tenure {
+    font-size: 13px;
+  }
+  .topbar {
+    font-size: 9px;
+  }
+  .filters button {
+    font-size: 11px;
+  }
+  .architecture {
+    height: 290px;
+  }
+  .project-stack > p {
+    font-size: 12px;
+  }
+  .project-copy .project-stack .tags li {
+    font-size: 11px;
+  }
+  .section-heading {
+    flex-wrap: wrap;
+  }
+  .system-top {
+    font-size: 9px;
+  }
+  .hero-system .system-top {
+    font-size: 9px;
+  }
+  .career-path {
+    font-size: 12px;
+  }
+  footer {
+    font-size: 11px;
+  }
+}
+@media print {
+  .home-badges,
+  .university-initial,
+  .credential-art {
+    display: none;
+  }
+  .project-brief .brief-content {
+    display: block;
+  }
+  .certifications {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.nav-number {
+  opacity: 1;
+}
+#certifications {
+  scroll-margin-top: 100px;
+}
